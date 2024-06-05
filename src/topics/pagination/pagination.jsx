@@ -35,15 +35,19 @@ function Pagination() {
           <li key={item}>{item}</li>
         ))}
       </ul>
-      <button disabled={currentPage === 1} onClick={handlePrevious}>
+      <button disabled={currentPage === 1} onClick={handlePrevious} className='navBtn'>
         prev
       </button>
       {pageButtonArray.map((num) => (
-        <button key={num} onClick={() => handlePageChange(num)} className={currentPage === num ? 'active' : ''}>
+        <button
+          key={num}
+          onClick={() => handlePageChange(num)}
+          className={`numberBtn ${currentPage === num ? 'active' : ''}`}
+        >
           {num}
         </button>
       ))}
-      <button disabled={currentPage === totalPages} onClick={handleNext}>
+      <button disabled={currentPage === totalPages} onClick={handleNext} className='navBtn'>
         next
       </button>
     </div>

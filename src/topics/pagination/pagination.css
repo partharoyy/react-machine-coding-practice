@@ -1,7 +1,36 @@
 ul {
-  list-style-type: none;
+  list-style: none;
+  display: grid;
+  max-width: 50rem;
+  margin: 2rem auto;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  gap: 0.5rem;
 }
 
-.active {
-  border: 1px solid yellow;
+.numberBtn {
+  margin: 0.5rem;
+  background-color: pink;
+  margin: 0.3rem;
+}
+
+.numberBtn.active {
+  background-color: brown;
+  color: whitesmoke;
+}
+
+ul > li {
+  background-color: orange;
+  padding: 0.5rem;
+}
+
+.navBtn {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.navBtn:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
 }
