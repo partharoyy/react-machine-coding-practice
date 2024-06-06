@@ -13,25 +13,36 @@ function QuotesGenerator() {
 
       if (data) {
         setQuotes(data[0]);
-        setIsLoading(false);
       }
     } catch (error) {
-      isLoading(false);
       console.log(error);
+    } finally {
+      setIsLoading(false);
     }
   }
 
   useEffect(() => {
     fetchQuote();
+    console.log('mounted');
+
+    return () => {
+      console.log('unmounted');
+    };
   }, []);
+
+  function handleRefresh() {
+    fetchQuote();
+  }
 
   return (
     <div>
+      {isLoading && <p>Loading...</p>}
       <h1>Random quotes generator</h1>
       <div className={styles.mainContainer}>
         <p className={styles.content}>{quotes.content}</p>
         <p className={styles.author}>- {quotes.author}</p>
       </div>
+      <button onClick={handleRefresh}>Refresh</button>
     </div>
   );
 }

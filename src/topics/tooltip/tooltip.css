@@ -1,0 +1,11 @@
+.hover {
+  position: relative;
+  display: inline-block;
+}
+.tooltip {
+  position: absolute;
+  top: calc(-100% -50px);
+  transform: translateX(-50%);
+  color: white;
+  padding: 0.5rem;
+}
