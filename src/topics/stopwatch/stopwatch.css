@@ -1,0 +1,18 @@
+.time-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-container button {
+  background-color: black;
+  color: whitesmoke;
+}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './index.css';
+import './step-progress.css';
 
 function StepProgress() {
   const [activeStep, setActiveStep] = useState(0);
@@ -14,7 +14,8 @@ function StepProgress() {
   };
 
   const calculateCurrentStepWidth = () => {
-    return `${(100 / steps.length - 1) * activeStep}%`;
+    const oneStep = 100 / (steps.length - 1);
+    return `${oneStep * activeStep}%`;
   };
 
   return (

@@ -27,10 +27,13 @@
 
 .btn {
   margin: 0.5rem;
+  background-color: pink;
 }
 
 button:disabled {
   color: #000;
   opacity: 0.55;
   cursor: not-allowed;
+  background-color: white;
+  border: 1px solid grey;
 }
