@@ -23,11 +23,6 @@ function QuotesGenerator() {
 
   useEffect(() => {
     fetchQuote();
-    console.log('mounted');
-
-    return () => {
-      console.log('unmounted');
-    };
   }, []);
 
   function handleRefresh() {

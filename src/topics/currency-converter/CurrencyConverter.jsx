@@ -25,8 +25,6 @@ function CurrencyConverter() {
     fetchExchangeRate();
   }, [amount, fromCurrency, toCurrency]);
 
-  console.log(convertedAmount);
-
   return (
     <div>
       <h1>Currency Converter</h1>
