@@ -1,4 +1,5 @@
 import './App.css';
+import CurrencyConverter from './topics/currency-converter/CurrencyConverter';
 import DigitalClock from './topics/digitalclock';
 import Pagination from './topics/pagination/pagination';
 import QuotesGenerator from './topics/quotes-generator/quotes-generator';
@@ -15,6 +16,7 @@ function App() {
       <Stopwatch />
       <QuotesGenerator />
       <Tooltip />
+      <CurrencyConverter />
     </>
   );
 }
