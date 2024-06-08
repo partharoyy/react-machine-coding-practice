@@ -26,9 +26,9 @@ function CurrencyConverter() {
   }, [amount, fromCurrency, toCurrency]);
 
   return (
-    <div>
+    <div className='currency-main-container'>
       <h1>Currency Converter</h1>
-      <div>
+      <div className='from'>
         <input
           type='number'
           onChange={(e) => setAmount(e.target.value)}
@@ -43,7 +43,7 @@ function CurrencyConverter() {
         </select>
       </div>
       <p>To</p>
-      <div>
+      <div className='to'>
         <input type='text' readOnly value={convertedAmount} />
         <select value={toCurrency} onChange={(e) => setToCurrency(e.target.value)}>
           <option value='USD'>USD</option>
@@ -51,7 +51,7 @@ function CurrencyConverter() {
           <option value='EUR'>EUR</option>
         </select>
       </div>
-      <p>
+      <p className='currency-info'>
         Exchange Rate: 1 {fromCurrency} = {exchangeRate} {toCurrency}
       </p>
     </div>
