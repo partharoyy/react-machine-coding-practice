@@ -29,3 +29,8 @@
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+
+.category-active {
+  background-color: black;
+  color: white;
+}

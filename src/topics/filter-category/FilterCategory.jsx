@@ -49,12 +49,12 @@ function FilterCategory() {
         {uniqueProducts.map((category) => (
           <button
             key={category}
-            className='category'
             onClick={() =>
               setCurrentSelectedCategory(
                 currentSelectedCategory !== '' && currentSelectedCategory === category ? '' : category
               )
             }
+            className={`${currentSelectedCategory === category ? 'category category-active' : 'category'}`}
           >
             {category}
           </button>
