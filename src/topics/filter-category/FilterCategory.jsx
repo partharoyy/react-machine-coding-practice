@@ -13,6 +13,7 @@ function FilterCategory() {
       const response = await fetch('https://dummyjson.com/products');
       const data = await response.json();
       setProducts(data.products);
+      setFilteredProducts(data.products);
       setIsLoading(false);
     } catch (error) {
       console.log(error);
@@ -26,8 +27,6 @@ function FilterCategory() {
 
   const uniqueProducts = [...new Set(products?.map((productItem) => productItem.category))];
 
-  console.log(products);
-
   useEffect(() => {
     const copyProducts = [...products];
 
@@ -40,11 +39,10 @@ function FilterCategory() {
     );
   }, [currentSelectedCategory]);
 
-  console.log(currentSelectedCategory);
-
   return (
     <div>
       <h1>Filter Categories</h1>
+      {isLoading && <p>Loading...</p>}
       <div>
         {uniqueProducts.map((category) => (
           <button
