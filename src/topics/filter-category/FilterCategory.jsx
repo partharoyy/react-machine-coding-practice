@@ -43,7 +43,7 @@ function FilterCategory() {
     <div>
       <h1>Filter Categories</h1>
       {isLoading && <p>Loading...</p>}
-      <div>
+      <div className='category-main-container'>
         {uniqueProducts.map((category) => (
           <button
             key={category}
