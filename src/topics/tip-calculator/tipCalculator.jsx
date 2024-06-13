@@ -1,4 +1,4 @@
-'./tipCalculator.css';
+import './tipCalculator.css';
 
 import { useState } from 'react';
 
@@ -34,27 +34,27 @@ function TipCalculator() {
     <div>
       <h1>Tip calculator</h1>
       <div className='tip-main-container'>
-        <div>
+        <div className='tip-input-container'>
           <label>Bill Amount</label>
           <input type='number' value={billAmount} onChange={(e) => setBillAmount(e.target.value)} />
         </div>
-        <div>
+        <div className='tip-input-container'>
           <label>Tip Percentage</label>
           <input type='number' value={tipPercentage} onChange={(e) => setTipPercentage(e.target.value)} />
         </div>
-        <div>
+        <div className='tip-input-container'>
           <label>Number of people</label>
           <input type='number' value={splitCount} onChange={(e) => setSplitCount(e.target.value)} />
         </div>
         <button onClick={handleCalculateTip}>Calculate Tip</button>
         {tipAmount ? (
-          <div>
+          <div className='tip-result-info'>
             <p>Total Amount: {tipAmount.totalAmount} </p>
             <p>Tip per person: {tipAmount.tipPerPerson}</p>
             <p>Total amount per person: {tipAmount.totalPerPerson}</p>
           </div>
         ) : null}
-        {errorMsg && <p>{errorMsg}</p>}
+        {errorMsg && <p className='tip-err-info'>{errorMsg}</p>}
       </div>
     </div>
   );

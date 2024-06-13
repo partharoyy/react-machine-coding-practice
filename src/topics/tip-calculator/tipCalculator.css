@@ -1,1 +1,43 @@
+.tip-main-container {
+  background-color: orange;
+  max-width: 500px;
+  padding: 1rem;
+  margin: auto;
+  border-radius: 5px;
+}
 
+.tip-input-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  margin-bottom: 0.5rem;
+}
+
+.tip-input-container label {
+  flex: 1;
+}
+
+.tip-input-container input {
+  flex: 2;
+  padding: 0.2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.tip-main-container button {
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+}
+
+.tip-result-info {
+  color: green;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.tip-err-info {
+  color: red;
+  font-weight: bold;
+}
