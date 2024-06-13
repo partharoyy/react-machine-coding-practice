@@ -2,6 +2,7 @@ import './App.css';
 import CurrencyConverter from './topics/currency-converter/CurrencyConverter';
 import DigitalClock from './topics/digitalclock';
 import FilterCategory from './topics/filter-category/FilterCategory';
+import MusicPlayer from './topics/music-player/MusicPlayer';
 import Pagination from './topics/pagination/pagination';
 import QuotesGenerator from './topics/quotes-generator/quotes-generator';
 import StepProgress from './topics/step-progress/step-progress';
@@ -21,6 +22,7 @@ function App() {
       <CurrencyConverter />
       <FilterCategory />
       <TipCalculator />
+      <MusicPlayer />
     </>
   );
 }
