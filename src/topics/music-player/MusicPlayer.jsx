@@ -51,15 +51,15 @@ function MusicPlayer() {
   }
 
   return (
-    <div>
+    <div className='music-container'>
       <h1>Music Player</h1>
-      <div>{tracks[currentSong].title}</div>
-      <img src={tracks[currentSong].image} alt={tracks[currentSong].title} />
+      <div className='music-title'>{tracks[currentSong].title}</div>
+      <img src={tracks[currentSong].image} alt={tracks[currentSong].title} className='music-label' />
       <audio ref={audioRef} src={tracks[currentSong].source} />
       <div className='music-progress'>
         <div style={{ width: `${songProgress}%`, background: isPlaying ? '#3498db' : '#a43636', height: '15px' }}></div>
       </div>
-      <div>
+      <div className='button-container'>
         <button onClick={() => handleSkipSong('backward')}>Backward</button>
         <button onClick={handlePlayPause}>Play/Pause</button>
         <button onClick={() => handleSkipSong('forward')}>Forward</button>

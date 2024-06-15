@@ -1,0 +1,32 @@
+.music-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.music-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.music-label {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  margin: 0.5rem;
+}
+
+.music-progress {
+  border-radius: 10px;
+  margin: 1rem;
+  overflow: hidden;
+}
