@@ -5,12 +5,13 @@ const tracks = [
   {
     title: 'Track 1',
     source: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
-    image: 'https://via.placeholder.com/150',
+    image: 'https://i.pinimg.com/originals/13/04/c2/1304c21b242f729ee3e8792e411465d7.jpg',
   },
   {
     title: 'Track 2',
     source: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
-    image: 'https://via.placeholder.com/150',
+    image:
+      'https://d1csarkz8obe9u.cloudfront.net/posterpreviews/colorful-sky-cloud-cd-cover-music-design-template-a116bc2d5aa000ac0dbebe2e8a43c821_screen.jpg?ts=1640356346',
   },
 ];
 
